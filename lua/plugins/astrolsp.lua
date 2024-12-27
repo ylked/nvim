@@ -47,6 +47,11 @@ return {
       metals = {
         cmd = { "metals" },
         filetypes = { "scala" },
+      },
+      verible = {
+        cmd = { 'verible-verilog-ls', '--rules_config_search' },
+        filetypes = { 'systemverilog', 'verilog' },
+        root_dir = require('lspconfig.util').find_git_ancestor,
       }
     },
     -- customize how language servers are attached
