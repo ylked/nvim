@@ -10,7 +10,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "catppuccin-latte",
+    colorscheme = os.getenv("NVIM_THEME") or "catppuccin-latte",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
