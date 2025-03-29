@@ -39,7 +39,8 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "metals"
+      "metals",
+      "clangd",
       -- "pyright"
     },
     -- customize language server configuration options passed to `lspconfig`
