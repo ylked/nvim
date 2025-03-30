@@ -46,7 +46,16 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      clangd = { 
+	capabilities = { 
+	  offsetEncoding = "utf-8"
+        }, 
+        cmd = {
+          "clangd",
+          "--compile-commands-dir=.",
+    	  "--query-driver=" .. vim.fn.systemlist("which clang")[1],
+        },
+      },
       metals = {
         cmd = { "metals" },
         filetypes = { "scala" },
