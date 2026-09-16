@@ -3,6 +3,8 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.bluloco-nvim"},
+  { import = "astrocommunity.colorscheme.cyberdream-nvim"}
   -- example of importing a plugin
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   -- example of importing an entire language pack
